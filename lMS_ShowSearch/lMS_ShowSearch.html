@@ -1,0 +1,21 @@
+<template>
+    <!-- <lightning-card title='LMS Show Contacts' icon-name="custom:custom33">
+        <template if:true={contactList}>
+            <template for:each={contactList} for:item='con'>
+                <lightning-card key={con.Id} title={con.Name} class="slds-tabs_card slds-size_1-of-1">
+                <p class="slds-text-title_bold">Title : <lightning-formatted-text value={con.Title}></lightning-formatted-text></p>  
+                <p class="slds-text-title_bold">Phone : <lightning-formatted-phone value={con.Phone}></lightning-formatted-phone></p> 
+                <p class="slds-text-title_bold">Email : <lightning-formatted-email value={con.Email}></lightning-formatted-email></p>
+                </lightning-card>
+            </template>
+        </template>
+    </lightning-card> -->
+
+    <lightning-card title='LMS Contacts Data Table' icon-name="custom:custom22">
+        <lightning-datatable
+                key-field="id"
+                data={listData}
+                columns={columns}>
+        </lightning-datatable>
+    </lightning-card>
+</template>

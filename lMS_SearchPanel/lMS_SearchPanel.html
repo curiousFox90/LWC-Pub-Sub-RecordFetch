@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title='LMS Search Panel' icon-name="custom:custom5">
+        <lightning-layout multiple-rows="true" vertical-align='end'>
+            <lightning-layout-item class='slds-p-around_small'>
+            <lightning-input 
+                label='Enter Contact Name'
+                onchange={handleChange}
+                value={contactLastName}
+                name='id'
+            >
+            </lightning-input>
+        </lightning-layout-item>
+        
+        <lightning-layout-item class='slds-p-around_small'>
+            <lightning-button
+                label='Search Publish'
+                onclick={handleSearchPublish}
+                variant ='brand'
+                icon-name="utility:search"
+                icon-position="right"
+            >
+            </lightning-button>
+        </lightning-layout-item>
+
+        <lightning-layout-item class='slds-p-around_small'>
+            <lightning-button
+                label='Search Subscribe'
+                onclick={handleSearchSubscribe}
+                variant ='brand'
+                icon-name="utility:search"
+                icon-position="right"
+            >
+            </lightning-button>
+        </lightning-layout-item>
+
+        </lightning-layout>
+    </lightning-card>
+</template>
